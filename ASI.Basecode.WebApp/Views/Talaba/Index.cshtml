@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Talaba Page";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">This is demo</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+
+<br />
+<div style="margin-top: 0%; margin-bottom: 5%">
+    <div style="display: flex">
+        <div class="container">
+            <div class="card rectangular-card1">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;"><b>Biggest Tech Companies</b></h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div style="display: flex">
+        <div class="container">
+            <div class="card rectangular-card">
+                <center><img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" style="width: 200px; height: 200px;" alt="Image Alt Text"></center>
+                <div class="card-body">
+                    <h5 class="card-title"><b>Google</b></h5>
+                    <p class="card-text">Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing ...</p>
+                    <a href="https://en.wikipedia.org/wiki/Google" target="_blank" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card rectangular-card">
+                <center><img src="https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png" style="width: 200px; height: 200px;" alt="Image Alt Text"></center>
+                <div class="card-body">
+                    <h5 class="card-title"><b>Apple</b></h5>
+                    <p class="card-text">Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world's largest technology company by revenue ...</p>
+                    <a href="https://en.wikipedia.org/wiki/Apple_Inc." target="_blank" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card rectangular-card">
+                <center><img src="data:image/png;base64,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" style="width: 200px; height: 200px;" alt="Image Alt Text"></center>
+                <div class="card-body">
+                    <h5 class="card-title"><b>Microsoft</b></h5>
+                    <p class="card-text">Microsoft is the world's largest software maker. The company, founded by Bill Gates and Paul Allen in 1975, is best known for its software products, including Microsoft Windows ...</p>
+                    <a href="https://en.wikipedia.org/wiki/Microsoft" target="_blank" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card rectangular-card">
+                <center><img src="https://blog.logomyway.com/wp-content/uploads/2021/11/meta-logo.png" style="width: 200px; height: 200px;" alt="Image Alt Text"></center>
+                <div class="card-body">
+                    <h5 class="card-title"><b>Meta</b></h5>
+                    <p class="card-text">Meta Platforms, Inc., doing business as Meta, and formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology ... </p>
+                    <a href="https://en.wikipedia.org/wiki/Meta_Platforms" target="_blank" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div><br />
+    <div style="display: flex">
+        <div class="container">
+            <div class="card rectangular-card1">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;"><span>Created by: <b><a href="https://www.facebook.com/darylltalaba" target="_blank">Daryll T. Talaba</a></b></span></h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+</div>
+
+
+
+
+
+<style>
+    /* Custom CSS to make the card rectangular */
+    .rectangular-card {
+        width: 300px; /* Adjust the width as needed */
+        height: 500px; /* Adjust the height as needed */
+        border-radius: 0; /* Remove border radius to make it rectangular */
+    }
+
+    .rectangular-card1 {
+        width: 100%; /* Adjust the width as needed */
+        height: 100%; /* Adjust the height as needed */
+        border-radius: 0; /* Remove border radius to make it rectangular */
+    }
+</style>
