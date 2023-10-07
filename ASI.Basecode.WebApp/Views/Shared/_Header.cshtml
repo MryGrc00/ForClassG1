@@ -7,9 +7,10 @@
              onclick="window.location.href = '@Url.Action("Index", "Home")';">
     </div>
 
+    <a asp-action="Cejudo" asp-controller="Cejudo">CEJUDO</a>
     <a asp-action="Index" asp-controller="Tagaro">Tagaro</a>
     <a asp-action="Index" asp-controller="Talaba">Talaba</a>
-  
+
     <div class="logosec">
         @HttpContextAccessor.HttpContext.Session.GetString("UserName")
         <div class="mr-20 hover-pointer" style="position: relative">
