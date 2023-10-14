@@ -2,7 +2,7 @@
 @inject IHttpContextAccessor HttpContextAccessor
 <header class="@((ViewBag.LoginView == true) ? "hide-navbar" : "")">
     <div class="logosec hover-pointer">
-        <img src="~/img/asi-logo-invert.svg"
+        <img src="~/img/reviewlogo.png"
              style="width: 185px;" alt="logo"
              onclick="window.location.href = '@Url.Action("Index", "Home")';">
     </div>
@@ -12,6 +12,8 @@
     <a asp-action="Cejudo" asp-controller="Cejudo">CEJUDO</a>
     <a asp-action="Index" asp-controller="Tagaro">Tagaro</a>
     <a asp-action="Index" asp-controller="Talaba">Talaba</a>
+    <a asp-action="Index" asp-controller="Book">Books</a>
+    <a asp-action="Create" asp-controller="Book">Create Book</a>
 
     <div class="logosec">
         @HttpContextAccessor.HttpContext.Session.GetString("UserName")
